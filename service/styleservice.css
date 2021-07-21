@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+/****
+Author name: Treasure Khumalo
+Author URL www.iamtreasure.me
+
+****/
+/* BODY FONT */
+@font-face {
+	font-family:"Humanst521 Lt BT";
+	src:url(../fonts/tt0288m.ttf);
+}
+
+html,section,article,a,p,h1,h2,h3,h4,h5,h6,form {
+	font-family:'Humanst521 Lt BT';
+	font-size: 18px;
+}
+
+body {
+	font-family:'Humanst521 Lt BT';
+	overflow-x: hidden;
+}
+/* Intro image */
+.intro {
+	height: auto 0;
+	background-image:url(../img/0258912001507403441.jpg);	
+}
+
+.intro h1 {
+	font-size: 150px;
+	color: #fff;
+	padding: 15% 0;
+	text-align: center;
+}
+
+/* ABOUT PAGE STYLING */
+.about-panel-group {
+	margin-top: 2%;
+}
+
+.about-info-panel {
+	background-color: #333;
+	border-radius: 5px;
+	margin: 1%;
+	padding: 15px;
+	margin-left: 6%;
+}
+
+.about-content h1 {
+	font-family: "Humanst521 Lt BT";
+	color:#d37802;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.about-info-panel img {
+	border-radius: 8px;
+}
+
+.about-info-panel h2 {
+	font-family: "Humanst521 Lt BT";
+	color: #d37802;
+}
+
+.about-info-panel p {
+	color: #fff;
+	font-size: 16px;
+}
+
+/* Services Page */
+.services-wrapper {
+	background-color: #e6e6e6;
+	margin-top:7%;
+	padding-bottom: 3%;
+}
+
+.services-group {
+	margin-top: 3%;	
+}
+
+.services-content {
+	margin-top:4%;
+}
+
+.services-content h1{
+	font-family: "Humanst521 Lt BT";
+	text-align: center;
+	color: #d37802;	
+}
+
+.services-content-info {
+	margin-top: 4%;
+}
+
+.services-group h2 {
+	color: #d37802;
+}
+
+.sc-info-block {
+	margin: 0 2% 3% 2%;
+}
+
+.services-content h3{
+	font-family: "Humanst521 Lt BT";
+	color: #d37802;
+}
+
+.services-content img {
+	width: 32px;
+	height: 32px;
+	margin: 10px 0;
+}
+
+.services-group {
+	padding-top: 3%;
+}
+
+/* Gallery */ 
+.gallery-content {
+	margin-top: 5%;
+}
+
+.title h1 {
+	font-family: "Humanst521 Lt BT";
+	text-align: center;
+	color: #d37802;
+}
+
+.gallery-group {
+	margin-top: 7%;
+}
+
+.gallery-group img{
+	margin-bottom: 4%;
+}
+
+/* Clients Page */
+.client-content {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.title h1 {
+	font-family: "Humanst521 Lt BT";
+	text-align: center;
+	color: #d37802;
+}
+
+.client-group {
+	margin-top: 7%;
+}
+
+.client-group img{
+	margin: 1% 0 ;
+}
+
+/* Contact Page */
+.contact-wrapper {
+	background-image:url(../img/Containers.gif);
+	margin-top: 7%;
+}
+
+.contact-wrapper h1 {
+	font-family: "Humanst521 Lt BT";
+	margin-top: 5%;
+}
+
+/* Form */
+form {
+	margin-top: 7%;
+	margin-bottom: 10%;
+	color: #fff;
+	font-size: 18px;
+}
+
+input[type="text"],input[type="email"],textarea {
+	padding: 25px;
+	background-color: transparent;
+	margin-bottom: 2%;
+	border: 1px solid #fff;
+	border-radius: 40px;
+	width:100%;
+}
+
+input[type="text"],input[type="email"],textarea:focus {
+	padding: 25px;
+	background-color: transparent;
+	margin-bottom: 2%;
+	border: 1px solid #fff;
+	border-radius: 40px;
+}
+
+ input[type="submit"] {
+	 padding: 22px;
+	 color: #fff;
+	 font-size: 20px;
+	 background-color: #d37802;
+	 margin-top: 2%;
+	 border: 0;
+	 border-radius: 40px;
+	 width: 45%;
+ }
+
+ input[text="submit"]:hover {
+	 background-color: transparent;
+	 border: 1px solid #d37802;
+ }
+
+/*  Placeholder styling  */
+::-webkit-input-placeholder {
+	font-size: 18px;
+	color: #ffffff;
+}
+
+::-moz-placeholder {
+	font-size: 18px;
+	color: #ffffff;
+}
+
+:-o-placeholder {
+	font-size: 18px;
+	color: #ffffff;
+}
+
+:-ms-placeholder {
+	font-size: 18px;
+	color: #ffffff;
+}
+
+/* Bottom Links */
+.bottom-wrapper {
+	background-color: #181818;
+	padding: 30px 0;
+}
+
+.bottom-wrapper a {
+	font-size: 17px;
+	color: #fff;
+}
+
+.bottom-wrapper a:hover {
+	color: #f3f3f3;
+}
+
+/* Footer */
+.footer-wrapper {
+	background-color: #000;
+	line-height: 50px;
+	font-size: 18px;
+}
+
+.footer-wrapper p{
+	color: #fff;
+	text-align: center;
+}
+
+.footer-wrapper a{
+	color: #d37802;
+}
+
+.footer-wrapper a:hover{
+	color: #fff;
+	text-decoration: none;
+
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-ms-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+
+.footer-wrapper .fa {
+	padding-top: 10px;
+}
