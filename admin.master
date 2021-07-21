@@ -1,0 +1,170 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html>
+
+
+<script src="../student/js/validation.js" language="javascript" type="text/javascript"></script>
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>College Website</title>
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 894px;
+        }
+
+        .auto-style7 {
+            height: 251px;
+        }
+
+        .auto-style8 {
+            height: 66px;
+        }
+
+        .auto-style9 {
+            height: 33px;
+        }
+
+        .auto-style10 {
+            height: 450px;
+            width: 1205px;
+        }
+        .auto-style10 {
+            height: 491px;
+
+        }
+        .auto-style11 {
+            height: 491px;
+            width: 251px;
+        }
+    </style>
+</head>
+<body style="height: 913px; width: 1500px;  background: url(../images/bg_body.jpg) center 0 no-repeat #d6bba0;
+ margin: 0px 10px 0px 10px; background-image:; border: 1px solid #496077; " runat="server" background="~/images/5.jpg" >
+     <form runat="server" id="form1"  style="background-color:white;">
+
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style7" colspan="2">
+                     <img id="Image1" src="IMAGES/banlogo.jpg" style="height: 250px; width: 100%;">
+                </td>
+            
+                    
+            
+
+                
+            </tr>
+            <tr>
+                <td class="auto-style8" colspan="2">
+                    <h1 align="center" style="background-color: #003366; height: 68px; width: 1286px; top: 0px; left: 0px;  font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;">Industrial visit and Management syestem(admin)</h1>
+
+
+
+
+                </td>
+
+
+
+
+            </tr>
+
+            <tr>
+                <td class="auto-style9" colspan="2">
+                    <div class="clear hideSkiplink" style="background-color: #003366">
+                        <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu"
+                            EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal"
+                            BackColor="#00CCFF" BorderStyle="Solid" Font-Bold="True" ForeColor="White" OnMenuItemClick="NavigationMenu_MenuItemClick">
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/home.aspx" Text="Home" />
+                                <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"></asp:MenuItem>
+                                <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateUrl="~/contact.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Service" Value="Service" NavigateUrl="~/Service.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Photo Gallery" Value="Photo Gallery">
+                                  
+                                    <asp:MenuItem Text="Faculty" Value="Faculty"
+                                        NavigateUrl="~/managepic.aspx"></asp:MenuItem>
+                                    
+                                </asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style11" style=" background-color: #FFFFFF;">
+                 <table cellpadding="1" cellspacing="1" style="border: thick double #000000; width: 154px; color: #FFFFFF; background-color: #003366; 
+font-weight: bold; height: 249px;" border="1">
+    <tbody><tr>
+        <td style="width: 100px">
+            <a id="HyperLink1" href="usersiteshow.aspx" style="display:inline-block;color:White;font-family:Mangal;
+font-weight:bold;text-decoration:none;width:170px;">Industry</a></td>
+    </tr>
+    <tr>
+        <td style="width: 100px">
+            <a id="HyperLink2" href="managepic.aspx" style="display:inline-block;color:White;font-family:Mangal;
+font-weight:bold;text-decoration:none;width:168px;">gallery</a></td>
+    </tr>
+    <tr>
+        <td style="width: 100px">
+            <a id="HyperLink3" href="Civil.aspx" style="display:inline-block;color:White;font-family:Mangal;
+font-weight:bold;text-decoration:none;width:168px;">Top Recuriters</a></td>
+    </tr>
+    
+
+    <tr>
+        <td style="width: 100px">
+            <a id="HyperLink9" href="instruction.aspx" style="display:inline-block;color:White;
+font-family:Mangal;font-weight:bold;text-decoration:none;width:168px;"> General Instructions</a></td>
+    </tr>
+    
+</tbody></table>   
+                </td>
+                <td class="auto-style10">
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+    
+    
+               <td colspan="2">&nbsp; 
+
+    <div class="footer">
+        
+        Copyright &copy; Aashugamer.in
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
